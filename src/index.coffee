@@ -1,5 +1,6 @@
 {ApiV3} = require './ApiV3'
+{Api} = require './Api'
 module.exports = (options) ->
-	return new ApiV3(options)
+	return if APi then new Api(options) else new ApiV3(options)
 
-module.exports.ApiV3 = ApiV3
+module.exports.Api = Api
